@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body>
+    <div class="container shadow col-8">
+        <header>
+            <div class="col-3 m-4">
+                <img src="IUlogo.png" alt="logo" class="img-fluid">
+                
+            </div>
+            
+        </header>
+        <main>
+            
+            <div class="col-12 "></div>
+                <form action="result.html" method="get" class="mx-4">
+                    <h1 class=" text-success font-weight-bold">Survey</h1>
+                    <p class="">If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+                    <h3 class=" text-success font-weight-bold">Your information:</h2>
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td><p class="font-weight-bold">First Name</p></td>
+                                <td><input type="text" class="form-control" placeholder="Enter your first name"></td>
+                            </tr>
+                            <tr>
+                                <td><p class="font-weight-bold">Last Name</p></td>
+                                <td><input type="text" class="form-control" placeholder="Enter your last name"></td>
+                            </tr>
+                            <tr>
+                                <td><p class="font-weight-bold">Email</p></td>
+                                <td><input type="email" class="form-control" placeholder="Enter your email"></td>
+                            </tr>
+                            <tr>
+                                <td><p class="font-weight-bold">Date of Birth</p></td>
+                                <td><input type="date" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                    <div  class="mb-3">
+                        <h3 class=" text-success font-weight-bold">How did you hear about..</h2>
+                        <input type="radio" value="r1"  name="source">Search engine
+                        <input type="radio" value="r2" class="mx-2"  name="source">Word of mouth
+                        <input type="radio" value="r3" class="mx-2"  name="source">Social Media
+                        <input type="radio" value="r4" class="mx-2"  name="source">Other
+                    </div>
+                    <div class="mb-3">
+                        <h3 class="text-success font-weight-bold">Would you like to receive announcements about new CDs and special offers?</h3>
+                        
+                        <input type="checkbox" value="option1"> YES, I'd like that. <br>
+                        <input type="checkbox" value="option2"> YES, please send me email announcements.
+                    </div>
+                    <div class="form-inline">
+                        <label class="mr-2" for="contactType">Please contact me by:</label>
+                        <select class="form-control" id="contactType" name="Type">
+                            <option value="">Email or postal mail</option>
+                            <option value="">Email only</option>
+                            <option value="">Postal mail only</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3 mt-3">Submit</button>
+                    
+                </form>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
